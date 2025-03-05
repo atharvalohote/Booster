@@ -1,6 +1,6 @@
 # Booster - YouTube & Coursera Speed Enhancer
 
-![Booster Logo](icon192.png)
+![Booster Logo](icon-192.png)
 
 ## 🚀 Overview
 Booster is a browser extension that **automatically speeds up YouTube ads** and **Coursera videos to 16x**, allowing you to save time and focus on what matters.
