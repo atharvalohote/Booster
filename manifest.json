@@ -1,37 +1,38 @@
 {
-  "name": "Booster",
-  "description": "Automatically speeds up YouTube ads and Coursera videos.",
-  "version": "1.0",
-  "author": "Atharva Lohote",
-  "manifest_version": 2,
-  "permissions": [
-    "storage",
-    "activeTab"
-  ],
-  "background": {
-    "scripts": [
-      "background.js"
+    "manifest_version": 3,
+    "name": "Booster Ad Skipper",
+    "version": "1.1",
+    "description": "Skips and mutes YouTube ads, speeds up Coursera videos, and improves user experience.",
+    "permissions": [
+        "storage"
     ],
-    "persistent": false
-  },
-  "content_scripts": [
-    {
-      "matches": [
+    "host_permissions": [
         "*://*.youtube.com/*",
         "*://*.coursera.org/*"
-      ],
-      "js": [
-        "inject.js"
-      ]
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*",
+                "*://*.coursera.org/*"
+            ],
+            "js": [
+                "inject.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
     }
-  ],
-  "browser_action": {
-    "default_popup": "options.html",
-    "default_icon": "icons/icon128.png"
-  },
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  }
 }

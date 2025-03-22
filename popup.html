@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ad Skipper Settings</title>
+    <style>
+        body { font-family: Arial, sans-serif; width: 200px; padding: 10px; }
+        label { display: block; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <h3>Ad Skipper</h3>
+    <label>
+        <input type="checkbox" id="toggleExtension"> Enable Extension
+    </label>
+    <label>
+        Default Speed: <input type="number" id="speedInput" min="0.5" max="16" step="0.1">
+    </label>
+    <button id="saveBtn">Save</button>
+    <script src="popup.js"></script>
+</body>
+</html>
