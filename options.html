@@ -2,13 +2,99 @@
 <html>
 <head>
     <title>Booster Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #673AB7; color: white; }
-        h1 { margin-top: 50px; }
+        html, body {
+            width: 360px;
+            height: 420px;
+            min-width: 320px;
+            min-height: 320px;
+            max-width: 400px;
+            max-height: 600px;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #fff;
+            color: #212121;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .container {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 24px;
+            padding: 24px 16px 16px 16px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            background: #fafafa;
+        }
+        h1 {
+            color: #ff9800;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+        .setting-label {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #673ab7;
+            font-weight: 500;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .slider {
+            flex: 1;
+            margin: 0 12px;
+        }
+        .value {
+            min-width: 40px;
+            text-align: right;
+            color: #ff9800;
+            font-weight: 500;
+        }
+        .save-btn {
+            background: #ff9800;
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            padding: 12px 32px;
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(255,152,0,0.15);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .save-btn:hover {
+            background: #fb8c00;
+        }
+        .status {
+            margin-top: 16px;
+            color: #388e3c;
+            font-size: 0.95rem;
+            min-height: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Booster Extension Settings</h1>
-    <p>Adjust your settings here (Coming Soon)</p>
+    <div class="container">
+        <h1>Booster Settings</h1>
+        <div class="setting-label">Default Playback Speed</div>
+        <div class="slider-container">
+            <span>0.25x</span>
+            <input type="range" min="0.25" max="16" step="0.25" value="1" class="slider" id="speedSlider">
+            <span class="value" id="speedValue">1x</span>
+        </div>
+        <button class="save-btn" id="saveBtn">Save</button>
+        <div class="status" id="status"></div>
+    </div>
+    <script src="options.js"></script>
 </body>
 </html>

@@ -1,0 +1,78 @@
+html, body {
+  width: 360px;
+  height: 420px;
+  min-width: 320px;
+  min-height: 320px;
+  max-width: 400px;
+  max-height: 600px;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #fff;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 24px;
+  padding: 24px 16px 16px 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  background: #fafafa;
+}
+h1 {
+  color: #ff9800;
+  font-weight: 500;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.setting-label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #673ab7;
+  font-weight: 500;
+}
+.slider-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.slider {
+  flex: 1;
+  margin: 0 12px;
+}
+.value {
+  min-width: 40px;
+  text-align: right;
+  color: #ff9800;
+  font-weight: 500;
+}
+.save-btn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(255,152,0,0.15);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.save-btn:hover {
+  background: #fb8c00;
+}
+.status {
+  margin-top: 16px;
+  color: #388e3c;
+  font-size: 0.95rem;
+  min-height: 20px;
+} 

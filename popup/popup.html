@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=360, initial-scale=1">
+  <title>Booster Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Booster</h1>
+    <div class="setting-label">Default Playback Speed</div>
+    <div class="slider-container">
+      <span>0.25x</span>
+      <input type="range" min="0.25" max="16" step="0.25" value="1" class="slider" id="speedSlider">
+      <span class="value" id="speedValue">1x</span>
+    </div>
+    <button class="save-btn" id="saveBtn">Save</button>
+    <div class="status" id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

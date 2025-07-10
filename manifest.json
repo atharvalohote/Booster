@@ -1,18 +1,15 @@
 {
+  "manifest_version": 3,
   "name": "Booster",
-  "description": "Automatically speeds up YouTube ads and Coursera videos.",
-  "version": "1.0",
+  "description": "Automatically speeds up YouTube ads and Coursera videos, and skips ads instantly.",
+  "version": "2.0",
   "author": "Atharva Lohote",
-  "manifest_version": 2,
   "permissions": [
     "storage",
-    "activeTab"
+    "scripting"
   ],
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false
+    "service_worker": "scripts/background.js"
   },
   "content_scripts": [
     {
@@ -20,13 +17,12 @@
         "*://*.youtube.com/*",
         "*://*.coursera.org/*"
       ],
-      "js": [
-        "inject.js"
-      ]
+      "js": ["scripts/content.js"],
+      "all_frames": true
     }
   ],
-  "browser_action": {
-    "default_popup": "options.html",
+  "action": {
+    "default_popup": "popup/popup.html",
     "default_icon": "icons/icon128.png"
   },
   "icons": {
