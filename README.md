@@ -1,4 +1,4 @@
-# Booster - YouTube & Coursera Speed Enhancer
+# Booster - YouTube Ad Skipper
 
 ![Booster Logo](icon-192.png)
 
