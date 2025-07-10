@@ -35,8 +35,7 @@ Follow these steps to install Booster on **Google Chrome** or **Microsoft Edge**
 6. Start speeding through videos instantly! 🚀  
 
 ## 🏗️ How It Works
-- **YouTube Ads**: Detects ads and accelerates them to 16x speed.  
-- **Coursera Videos**: Automatically adjusts playback to 16x for efficient learning.  
+- **YouTube Ads**: Detects ads and accelerates them to 16x speed.   
 - **Normal Videos**: Lets you customize playback speed for regular content.  
 
 ## 💡 Future Updates
